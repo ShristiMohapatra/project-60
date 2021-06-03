@@ -1,50 +1,78 @@
 <html>
 
 <head>
-
-    <title>Shristi's portfolio</title>
+    <title>Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <ul class="menu">
-        <li class="links"><a href="#welcome">HOME</a></li>
-        <li class="links"><a href="#videos">My Videos</a></li>
-        <li class="links"><a href="#writings">Writings</a></li>
-        <li class="links"><a href="#work">Work</a></li>
-        <li class="links"><a href="#contact">Contact</a></li>
-    </ul>
-    <section id="books">
-        <div id="div1">
-            <img src="thomas.jpeg">
-            <h1>Thomas Edison
-            </h1>
+    <center>
+        <ul class="menu">
+            <li class="links">Home</li>
+            <li class="links">Grid View</li>
+            <li class="links">Slide View</li>
+        </ul>
+    </center>
+    <br><br><br>
+    <section id="grid">
+        <h2>Grid Gallery</h2><br>
+        <script src=""></script>
+        <div class="row">
+            <img class="img" src="marguerite-729510__340.jpeg">
+            <img class="img" src="smycka-artificial-flower-rose-red__0903311_pe596728_s5.jpeg">
+            <img class="img" src="purple.png">
         </div>
     </section>
-    <br>
-    <section id="inform">
-        <div class="div"></div>
-        <p>Thomas Alva Edison (February 11, 1847 – October 18, 1931) was an American inventor and businessman who has been described as America's greatest inventor. He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures. These inventions, which include the phonograph, the motion picture camera, and early versions of the electric light bulb, have had a widespread impact on the modern industrialized world. He was one of the first inventors to apply the principles of organized science and teamwork to the process of invention, working with many researchers and employees. He established the first industrial research laboratory.</p>
+    <section id="grid">
+        <h2>slide Gallery</h2><br>
+        <script src=""></script>
+        <div class="column">
+            <img class="img" src="marguerite-729510__340.jpeg">
+            <img class="img" src="smycka-artificial-flower-rose-red__0903311_pe596728_s5.jpeg">
+            <img class="img" src="purple.png">
+        </div>
     </section>
-    
-    <br>
-    <section id="work">
-        <h1>Work</h1>
-        <div class="line"></div>
-        <br>
-        <iframe width="900" height="1000" src="https://en.wikipedia.org/wiki/Thomas_Edison#On_politics,_religion,_and_metaphysics" frameborder="0"></iframe>
-        <br>
-    </section>
-    <br><br>
-    <section id="writings">
-        <h1>Writings</h1>
-        <div class="line"></div>
-        <br>
-        <a class="article" href="https://www.history.com/topics/inventions/thomas-edison#:~:text=In%20his%2084%20years%2C%20Thomas,world's%20first%20industrial%20research%20laboratory." target="_blank">All about Thomas Edison</a>
-        <br><br>
-    </section>
-    <br><br>
+    <div id="mycarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <center>
+                    <a href="#" target="_blank">
+                        <img src="marguerite-729510__340.jpeg" height="200px"width="200px"class="img-responsive">
+                    </a>
+                    <div class="carousel-content">
+
+                    </div>
+                </center>
+            </div>
+            <center>
+                <a href="#" target="_blank">
+                    <img src="purple.png" width="200px" height="200px"class="img-responsive">
+                </a>
+                <div class="carousel-content">
+
+                </div>
+            </center>
+            <div class="item">
+                <center>
+                    <a href="#" target="_blank">
+                        <img src="smycka-artificial-flower-rose-red__0903311_pe596728_s5.jpeg" height="200px"width="200px"class="img-responsive">
+                    </a>
+                    <div class="carousel-content">
+
+                    </div>
+                </center>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#mycarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+        <a class="right carousel-control" href="#mycarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+
+    </div>
+
+
+
 </body>
 
 </html>
